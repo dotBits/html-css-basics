@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Acquapura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i,600" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Fira Sans', sans-serif;
+    }
+    main {
+        height: 70%;
+        justify-content: space-evenly;
+    }
+    footer {
+        /* border: 1px solid green; */
+    }
+    .row-btw-center {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .col-center-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logo {
+        width: 192px;
+        height: 32px;
+        margin-left: 10px;
+    }
+    .menu_icon {
+        width: 25px;
+        height: 22px;
+        margin-right: 20px;
+    }
+    .wrapper {
+        background: url('images/bg_home_landing.jpg');
+        height: 455px;
+    }
+    .mrg-20-0 {
+        margin: 20px 0;
+    }
+    .pdg-20-0 {
+        padding: 20px 0;
+    }
+    .headline {
+        color: white;
+        text-align: center;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    .headline .text {
+        background-color: #004a7c;
+        padding: 0 20px;
+        margin: 3px 0;
+    }
+    .main_cta {
+        background-color: white;
+        width: 190px;
+        height: 50px;
+        border-radius: 25px;
+        font-weight: 500;
+        font-size: 18px;
+        color: #004a7c;
+        border: none;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <header class="">
+            <div class="row-btw-center pdg-20-0">
+                <img class="logo" src="images/logo_acquapura.svg" />
+                <img class="menu_icon" src="images/menu.svg" />
+            </div>
+        
+        </header>
+        <main class="col-center-center">
+            <h1 class="col-center-center headline">
+                <span class="text">L’acqua pura</span>
+                <span class="text">dal rubinetto</span>
+                <span class="text">di casa tua</span>
+            </h1>
+            <button class="main_cta">Scopri come</button>
+        </main>
+    </div>
+    <footer>
+        <h3>Lorem ipsum sit dolor avec amet</h3>
+        <button>Subscribe</button>
+    </footer>
+</body>
+</html>
