@@ -14,11 +14,12 @@
         font-family: 'Fira Sans', sans-serif;
     }
     main {
-        height: 70%;
+        height: 455px;
         justify-content: space-evenly;
     }
-    footer {
-        /* border: 1px solid green; */
+    .col {
+        display: flex;
+        flex-direction: column;
     }
     .row-btw-center {
         display: flex;
@@ -44,13 +45,15 @@
     }
     .wrapper {
         background: url('images/bg_home_landing.jpg');
-        height: 455px;
     }
     .mrg-20-0 {
         margin: 20px 0;
     }
     .pdg-20-0 {
         padding: 20px 0;
+    }
+    .bg-blue-middle {
+        background-color: #acdcee;
     }
     .headline {
         color: white;
@@ -74,10 +77,29 @@
         color: #004a7c;
         border: none;
     }
+    section {
+        text-align: center;
+    }
+    section h2 {
+        color: #004a7c;
+        font-size: 24px;
+    }
+    .section-intro {
+        padding: 0 40px;
+        font-size: 16px;
+        color: #004a7c;
+    }
+    .info-box {
+        background-color: white;
+        width: 290px;
+        height: 450px;
+        border-radius: 5px;
+        box-shadow: 0px 7px 12px 0 rgba(0, 74, 124, 0.2);
+    }
 </style>
 
 <body>
-    <div class="wrapper">
+    <div class="col wrapper">
         <header class="">
             <div class="row-btw-center pdg-20-0">
                 <img class="logo" src="images/logo_acquapura.svg" />
@@ -93,10 +115,20 @@
             </h1>
             <button class="main_cta">Scopri come</button>
         </main>
+        <section class="col-center-center bg-blue-middle">
+            <h2>Sapevi che...?</h2>
+            <p class="section-intro">Ecco alcune piccole curiosità che non tutti sanno sui metodi tradizionali di consumo dell’acqua.</p>
+
+            <article>
+                <div class="info-box">
+                    
+                </div>
+            </article>
+        </section>
     </div>
-    <footer>
+    <!-- <footer>
         <h3>Lorem ipsum sit dolor avec amet</h3>
         <button>Subscribe</button>
-    </footer>
+    </footer> -->
 </body>
 </html>
