@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Acquapura</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,500i,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,500i,600">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
 <style>
@@ -16,6 +17,15 @@
     main {
         height: 455px;
         justify-content: space-evenly;
+    }
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    .row-center-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .col {
         display: flex;
@@ -84,17 +94,44 @@
         color: #004a7c;
         font-size: 24px;
     }
-    .section-intro {
+    .section_intro {
         padding: 0 40px;
         font-size: 16px;
         color: #004a7c;
     }
-    .info-box {
+    .info_box {
         background-color: white;
         width: 290px;
         height: 450px;
         border-radius: 5px;
         box-shadow: 0px 7px 12px 0 rgba(0, 74, 124, 0.2);
+        justify-content: space-evenly;
+    }
+    .info_box .image::before {
+        font-size: 90px;
+        color: #539ddb;
+    }
+    .info_box .text {
+        height: 190px;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        color: #004a7c;
+        padding: 0 10px;
+    }
+    .info_box .link {
+        height: 20px;
+        font-weight: 500;
+        color: #539ddb;
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    .carousel_info {
+        width: 100%;
+        overflow-x: scroll;
+    }
+    .carousel_info article {
+        padding: 0 15px;
     }
 </style>
 
@@ -117,13 +154,97 @@
         </main>
         <section class="col-center-center bg-blue-middle">
             <h2>Sapevi che...?</h2>
-            <p class="section-intro">Ecco alcune piccole curiosità che non tutti sanno sui metodi tradizionali di consumo dell’acqua.</p>
+            <p class="section_intro">Ecco alcune piccole curiosità che non tutti sanno sui metodi tradizionali di consumo dell’acqua.</p>
 
-            <article>
-                <div class="info-box">
-                    
-                </div>
-            </article>
+            <div class="row carousel_info">
+                <article>
+                    <div class="col info_box">
+                        <i class="image fas fa-euro-sign"></i>
+                        <span class="row-center-center text">
+                            “Comprando 2 casse di acqua a settimana, in un anno trasporti circa 468kg e spendi circa 240€”
+                        </span>
+                        <a href="#" class="link">Fammi sapere come posso evitarlo</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col info_box">
+                        <i class="image fas fa-exclamation-circle"></i>
+                        <span class="row-center-center text">
+                            “L’acqua non va conservata esposta al sole o in luoghi caldi, perché la plastica che la contiene potrebbe rilasciare sostanze nocive.
+                            La data di scadenza non deve essere troppo distante. Normalmente le bottiglie hanno 2 anni di scadenza”
+                        </span>
+                        <a href="#" class="link">Voglio saperne di più</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col info_box">
+                        <i class="image fas fa-exclamation-triangle"></i>
+                        <span class="row-center-center text">
+                            “Lo sapevi che facendo bollire l’acqua ne peggiori la sua qualità? Perché cresce la concentrazione delle sostanze indesiderate”
+                        </span>
+                        <a href="#" class="link">Spiegami meglio</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col info_box">
+                        <i class="image fab fa-untappd"></i>
+                        <span class="row-center-center text">
+                            “Non esiste un buon motivo per evitare di bere l’acqua del rubinetto se la usi per cucinare,
+                            dato che per i cibi viene bollita e addirittura peggiorata in termini di concentrazione delle sostanze
+                            indesiderate”
+                        </span>
+                        <a href="#" class="link">Voglio saperne di più</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col info_box">
+                        <i class="image fas fa-flask"></i>
+                        <span class="row-center-center text">
+                            “L’acqua della rete idrica viene disinfettata con il cloro”
+                        </span>
+                        <a href="#" class="link">Non voglio usarla!</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col info_box">
+                        <i class="image fas fa-water"></i>
+                        <span class="row-center-center text">
+                            “Ogni giorno nel nostro mare Mediterraneo vengono scaricate circa 700 tonnellate di plastica
+                            e una bottiglia di plastica ci mette quasi 1.000 anni a degradarsi”
+                        </span>
+                        <a href="#" class="link">Voglio un mare più pulito!</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col info_box">
+                        <i class="image fas fa-wine-bottle"></i>
+                        <span class="row-center-center text">
+                            “Più o meno ogni minuto viene aperta una bottiglia di acqua in plastica”
+                        </span>
+                        <a href="#" class="link">Dimmi che posso limitare il consumo di plastica</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col info_box">
+                        <i class="image fas fa-leaf"></i>
+                        <span class="row-center-center text">
+                            “Puoi contribuire ad eliminare parte di questa plastica facendo una scelta sana e consapevole, bevi acqua pura direttamente dal
+                            rubinetto di casa tua”
+                        </span>
+                        <a href="#" class="link">Ok! Spiegatemi come fare</a>
+                    </div>
+                </article>
+                <article>
+                    <div class="col info_box">
+                        <i class="image fas fa-money-bill-wave"></i>
+                        <span class="row-center-center text">
+                            “Con la stessa spesa per l’acquisto dell’acqua in bottiglia, puoi avere una soluzione ecologica, sostenibile, comoda e
+                            sicura direttamente a casa tua”
+                        </span>
+                        <a href="#" class="link">Ditemi quanto costa</a>
+                    </div>
+                </article>
+            </div>
         </section>
     </div>
     <!-- <footer>
