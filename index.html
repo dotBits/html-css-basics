@@ -15,7 +15,7 @@
         font-family: 'Fira Sans', sans-serif;
     }
     main {
-        height: 455px;
+        height: 405px;
         justify-content: space-evenly;
     }
     .row {
@@ -54,7 +54,7 @@
         margin-right: 20px;
     }
     .wrapper {
-        background: url('images/bg_home_landing.jpg');
+        background: url('images/bg_home_landing.jpg') no-repeat;
     }
     .mrg-20-0 {
         margin: 20px 0;
@@ -98,6 +98,16 @@
         padding: 0 40px;
         font-size: 16px;
         color: #004a7c;
+    }
+    .section_info {
+        position: relative;
+        padding: 20px 0 40px 0;
+    }
+    .section_divider {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        top: -35px;
     }
     .info_box {
         background-color: white;
@@ -152,7 +162,8 @@
             </h1>
             <button class="main_cta">Scopri come</button>
         </main>
-        <section class="col-center-center bg-blue-middle">
+        <section class="col-center-center bg-blue-middle section_info">
+            <!-- <img class="section_divider" src="images/Goccia/SVG/Goccia_Blue_middle.svg"> -->
             <h2>Sapevi che...?</h2>
             <p class="section_intro">Ecco alcune piccole curiosità che non tutti sanno sui metodi tradizionali di consumo dell’acqua.</p>
 
