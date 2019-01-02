@@ -7,6 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,500,500i,600">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="images/favicons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="images/favicons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="images/favicons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="images/favicons/mstile-310x310.png" />
+
 </head>
 
 <style>
@@ -65,6 +87,9 @@
     .bg-blue-middle {
         background-color: #acdcee;
     }
+    .bg-white {
+        background-color: white;
+    }
     .headline {
         color: white;
         text-align: center;
@@ -90,7 +115,7 @@
     section {
         text-align: center;
     }
-    section h2 {
+    section h2, section h3, section h4 {
         color: #004a7c;
         font-size: 24px;
     }
@@ -101,21 +126,29 @@
     }
     .section_info {
         position: relative;
-        padding: 20px 0 40px 0;
+        padding: 20px 0 100px 0;
     }
     .section_divider {
         position: absolute;
         width: 100%;
         height: 50px;
-        top: -35px;
+        top: -60px;
     }
     .info_box {
         background-color: white;
         width: 290px;
         height: 450px;
         border-radius: 5px;
-        box-shadow: 0px 7px 12px 0 rgba(0, 74, 124, 0.2);
+        box-shadow: 0 0 12px 0 rgba(0, 74, 124, 0.2);
         justify-content: space-evenly;
+        margin: 20px 0;
+    }
+    .editorial_info_box_content {
+        justify-content: flex-start;
+        height: auto;
+    }
+    .editorial_info_box_content h4 {
+        text-align: left;
     }
     .info_box .image::before {
         font-size: 90px;
@@ -143,6 +176,32 @@
     .carousel_info article {
         padding: 0 15px;
     }
+    .numbered {
+        position: relative;
+        text-align: left;
+        padding: 15px 35px;
+        margin: 15px 0;
+    }
+    .numbered .number {
+        position: absolute;
+        top: -40px;
+        left: 10px;
+        color: rgba(172, 220, 238, 0.5);
+        font-weight: 600;
+        font-size: 100px;
+    }
+    .numbered .text {
+        font-size: 16px;
+        color: #004a7c;
+        font-weight: 400;
+    }
+    .container {
+        padding: 20px;
+    }
+    .editorial_content {
+        text-align: left;
+        color: #004a7c;
+    }
 </style>
 
 <body>
@@ -163,7 +222,9 @@
             <button class="main_cta">Scopri come</button>
         </main>
         <section class="col-center-center bg-blue-middle section_info">
-            <!-- <img class="section_divider" src="images/Goccia/SVG/Goccia_Blue_middle.svg"> -->
+            <span class="section_divider">
+                <img src="images/Goccia_Azzurra.svg">
+            </span>
             <h2>Sapevi che...?</h2>
             <p class="section_intro">Ecco alcune piccole curiosità che non tutti sanno sui metodi tradizionali di consumo dell’acqua.</p>
 
@@ -255,6 +316,73 @@
                         <a href="#" class="link">Ditemi quanto costa</a>
                     </div>
                 </article>
+            </div>
+        </section>
+        <section class="col-center-center bg-white section_info">
+            <span class="section_divider">
+                <img src="images/Goccia_Bianca.svg">
+            </span>
+            <h2>Come scegliere un purificatore d'acqua domestico?</h2>
+
+            <div class="col-center-center">
+                <article class="numbered">
+                    <span class="number">1</span>
+                    <span class="text">È necessario effettuare un test dell’acqua che misura residuo fisso, conducibilità elettrica, PH, nitrati.
+                    Inoltre è possibile capire se l’acqua è Dolce o Dura</span>
+                </article>
+                <article class="numbered">
+                    <span class="number">2</span>
+                    <span class="text">Una volta effettuato il test, in funzione del risultato possiamo installare l'impianto più adatto alle tue esigenze.</span>
+                </article>
+
+                <h3>Come si differenziano?</h3>
+                <p class="container editorial_content">
+                    Oggi si vedono molti articoli scritti su giornali, siti internet e social che parlano di purificazione dell’acqua
+                    potabile domestica in modo a volte inappropriato a volte proprio fuori luogo.
+                    Forse perchè non si ha una conoscenza aggiornata, quindi per poche informazioni a riguardo, o forse per informazioni
+                    “guidate da interessi”.
+                    Facciamo un pò di chiarezza, nel campo della purificazione domestica dell’acqua potabile.
+                    Esistono sostanzialmente tre tipi di depurazione:
+                </p>
+
+                <article class="col info_box editorial_info_box_content">
+                    <div class="container">
+                        <h4>Micro filtrazione</h4>
+                        <p class="editorial_content">
+                            La micro filtrazione è un filtro a carboni attivi, trattiene sostanze dalla grandezza di dimensioni comprese tra 1
+                            a 5
+                            “micron”.
+                            E’ un sistema sicuramente diffuso, solitamente lo troviamo nei ristoranti, hotel, b&b, dove ci danno l’acqua dentro
+                            un
+                            bottiglia di vetro, con la scritta acqua a km 0 oppure acqua “micro filtrata”.
+                            Cosa toglie dall’acqua: le spore più grandi, sapore di cloro, cellule sanguinose, polveri sottili, amianto, farine,
+                            lieviti.
+                        </p>
+                    </div>
+                </article>
+                <article class="col info_box editorial_info_box_content">
+                    <div class="container">
+                        <h4>Ultra filtrazione</h4>
+                        <p class="editorial_content">
+                            L’ultra filtrazione trattiene sostanze dalla grandezza di 0,1 “micron”. Oltre a quello che la micro filtrazione...
+                        </p>
+                    </div>
+                </article>
+                <article class="col info_box editorial_info_box_content">
+                    <div class="container">
+                        <h4>Osmosi inversa</h4>
+                        <p class="editorial_content">
+                            Osmosi inversa
+                            L’osmosi inversa, necessita della “pre filtrazione” composta dai due filtri uno micro filtrazione a carboni...
+                        </p>
+                    </div>
+                </article>
+                <h3>In conclusione</h3>
+                <p class="container editorial_content">
+                    Noi di Acquapura pensiamo che l’acqua, quella di alta montagna, che sgorga naturale dalle sorgenti sia la migliore, e
+                    come tutte le acque di montagne hanno valori residui molto bassi (calcio magniesio, nitrati, solfati ecc.) e di
+                    conseguenza un “residuo fisso” basso, non azzerato, ma ba....
+                </p>
             </div>
         </section>
     </div>
